@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura divina</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.webp" >
+                </a>
+            </div>
+            <ul id="ulmenu" class="nav-links"></ul>
+            <div class="menu-icon" id="menu-icon">
+                &#9776; <!-- Icono de hamburguesa -->
+            </div>
+            <div id="icono-carrito">
+                <img src="carrito.png.png" alt="Carrito" />
+                <span id="cantidad-carrito" class="cantidad-carrito">0</span>
+            </div>
+        </nav>
+    </header>
+
+
+<main>
+    <h2>Contacto</h2>
+    <form>
+      <label for="">Nombre</label>
+      <input type="text" required  name="nombre">
+      <label for="">Apellido</label>
+      <input type="text" required  name="Apellido">
+      <label for="">Mail</label>
+      <input type="email" id="email" name="email" required>
+      <label for="">Telefono</label>
+      <input type="number" id="telefono" name="telefono" required>
+      <label for="">Mensaje</label>
+      <textarea name="mensaje" id="mensaje" ></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </main>
+
+
+<script src="contacto.js"></script>
+</body>
+</html>

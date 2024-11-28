@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechZone</title>
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo.png" alt="Aura Divina Logo">
+                </a>
+            </div>
+            <ul id="ulmenu" class="nav-links"></ul>
+            <div class="menu-icon" id="menu-icon">
+                &#9776; <!-- Icono de hamburguesa -->
+            </div>
+            <div id="icono-carrito">
+                <img src="carrito.png.png" alt="Carrito" />
+                <span id="cantidad-carrito" class="cantidad-carrito">0</span>
+            </div>
+        </nav>
+    </header>
+    
+
+    <main>
+        <h2>Carrito</h2>
+        <table>
+        <thead>
+            <tr>
+                <th>Imagen</th>
+                <th>Cantidad</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Total</th>
+                <th>Editar</th>
+            </tr>
+        </thead>
+        <tbody id="tablacarrito"></tbody>
+        </table>
+
+    </main>
+
+   
+    <div id="formulario-pago" style="display: none;">
+        <h3>Formulario de Pago</h3>
+        <!-- Aquí va tu formulario de pago -->
+        <form id="formPago">
+            <label for="nombre">Nombre completo:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+            <label for="direccion">Dirección:</label><br>
+            <input type="text" id="direccion" name="direccion" required><br><br>
+            <label for="tarjeta">Número de tarjeta:</label><br>
+            <input type="text" id="tarjeta" name="tarjeta" required><br><br>
+            <button type="submit">Pagar</button>
+        </form>
+    </div>
+
+    <script src="carrito.js"></script>
+</body>
+</html>
+
